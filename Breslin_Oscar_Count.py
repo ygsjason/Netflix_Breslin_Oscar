@@ -1,5 +1,7 @@
-#filter Tricks
+# Import your libraries
+import pandas as pd
 
+#filter Tricks
 oscar_nominees.query('id == "1" | year == "2000"')
 oscar_nominees[oscar_nominees.id.isin(["1", "2"])]
 oscar_nominees[(oscar_nominees['id'] == 1) | (oscar_nominees['id' == 2)] 
